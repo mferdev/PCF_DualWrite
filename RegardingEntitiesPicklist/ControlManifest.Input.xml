@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="MFERDEV" constructor="RegardingEntitiesPicklist" version="0.0.1" display-name-key="RegardingEntitiesPicklist" description-key="RegardingEntitiesPicklist description" control-type="standard" >
+    <property name="value" display-name-key="Value of the result of entity chosed" description-key="Value of the result of entity chosed" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="entityName" display-name-key="Entity Name" description-key="Main entity name" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="relatedEntityFilter" display-name-key="Related Entity Filter" description-key="Related Entity Filter" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="relatedEntityDisplay" display-name-key="Related Entity DisplayName" description-key="Related Entity DisplayName" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="relatedEntityValue" display-name-key="Related Entity Value Field" description-key="Related Entity Value Field" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="odatafilter" display-name-key="Odata Filter" description-key="Replace the filter fields with {1} for filter1, {2} for filter 2, ..." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="filter1" display-name-key="filter1" description-key="Filter that replace {1} in odatafilter" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="filter2" display-name-key="filter2" description-key="Filter that replace {2} in odatafilter" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="filter3" display-name-key="filter3" description-key="Filter that replace {3} in odatafilter" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="filter4" display-name-key="filter4" description-key="Filter that replace {4} in odatafilter" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="filter5" display-name-key="filter5" description-key="Filter that replace {5} in odatafilter" of-type="SingleLine.Text" usage="input" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+      <css path="css/styles.css" order="1" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
